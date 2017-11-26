@@ -17,4 +17,9 @@ public class IndexController {
         return "coming_soon";
     }
 
+    @RequestMapping(value = { "/template" }, method = RequestMethod.GET)
+    public String template() {
+        return "template_page";
+    }
+
 }
