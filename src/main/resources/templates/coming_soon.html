@@ -1,90 +1,18 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-<title>Home Organiser</title>
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout">
+<head lang="en">
+<!--/*-->
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
   integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/styles.css">
 <!-- Awesome Font -->
 <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+<!--*/-->
 </head>
 <body>
-  <!-- Collapsible Navigation Bar -->
-  <div class="container">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <span class="navbar-brand mb-0 h1"><img th:src="@{/images/logo.png}" alt="Logo" />Home Organiser</span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" th:href="@{/home}">Home <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false"> Menu </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action 1</a> <a class="dropdown-item" href="#">Action 2</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Action 3</a>
-            </div></li>
-        </ul>
-        <ul class="navbar-nav">
-          <li><a class="btn btn-outline-primary" role="button" href="#"><span class="fa fa-sign-in"></span> Login</a></li>
-        </ul>
-      </div>
-    </nav>
+  <div layout:fragment="content" class="container-fluid">
+    <h1 class="text-center">COMING SOON</h1>
   </div>
-
-  <div class="container">
-    <div class="row no-gutters">
-      <div class="col-2">
-        <div class="jumbotron" style="padding: 2rem 2rem; height:100%">
-          <p>
-            <a th:href="@{/links}">Links</a>
-          </p>
-          <p>
-            <a th:href="@{/todo}">Shopping List</a>
-          </p>
-          <p>
-            <a th:href="@{/todo}">Recipes</a>
-          </p>
-          <p>
-            <a th:href="@{/todo}">Rhythm Calendar</a>
-          </p>
-          <p>
-            <a th:href="@{/todo}">Weight Watch</a>
-          </p>
-          <p>
-            <a th:href="@{/todo}">Home Storage</a>
-          </p>
-          <p>
-            <a th:href="@{/todo}">Events</a>
-          </p>
-          <p>
-            <a th:href="@{/todo}">Gift Register</a>
-          </p>
-        </div>
-      </div>
-      <div class="col-10">
-        <div class="container-fluid">
-          <h1 class="text-center">COMING SOON</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 </html>

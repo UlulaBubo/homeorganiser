@@ -1,0 +1,41 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+<!--/*-->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+  integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/styles.css">
+<!-- Awesome Font -->
+<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+<!--*/-->
+</head>
+<body>
+  <div th:fragment="side-left" class="jumbotron" style="padding: 2rem 2rem; height: 100%">
+    <p>
+      <a th:href="@{/links}">Links</a>
+    </p>
+    <p>
+      <a th:href="@{/todo}">Shopping List</a>
+    </p>
+    <p>
+      <a th:href="@{/todo}">Recipes</a>
+    </p>
+    <p>
+      <a th:href="@{/todo}">Rhythm Calendar</a>
+    </p>
+    <p>
+      <a th:href="@{/todo}">Weight Watch</a>
+    </p>
+    <p>
+      <a th:href="@{/todo}">Home Storage</a>
+    </p>
+    <p>
+      <a th:href="@{/todo}">Events</a>
+    </p>
+    <p>
+      <a th:href="@{/todo}">Gift Register</a>
+    </p>
+  </div>
+</body>
+</html>
